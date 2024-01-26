@@ -18,7 +18,9 @@ public final class Constants {
   }
 
   //Intake Constants
-  public static final double INTAKE_MOTOR_SPEED = 0.5; //Change later to get initial speed
+  public static final double INTAKE_MOTOR_SPEED = 0.45;
+  public static final double OTB_MOTOR_SPEED = 0.25;
+  public static final int INTAKE_MOTOR_PORT = 0;
 
 
 }

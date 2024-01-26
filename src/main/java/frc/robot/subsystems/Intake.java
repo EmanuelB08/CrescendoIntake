@@ -10,7 +10,7 @@ import com.revrobotics.CANSparkLowLevel.MotorType;
 
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
-//import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
 
@@ -29,8 +29,7 @@ public class Intake extends SubsystemBase {
   }
 
   public void Spin() {
-    if(Note_in) {
-      IntakeMotor.set(Constants.INTAKE_MOTOR_SPEED);
+    if(Note_in) {IntakeMotor.set(Constants.INTAKE_MOTOR_SPEED);
   }
 }
 
@@ -50,5 +49,6 @@ public class Intake extends SubsystemBase {
 
   @Override
   public void periodic() {
+    SmartDashboard.putNumber("Intake Speed", IntakeMotor.get());
   }
 }

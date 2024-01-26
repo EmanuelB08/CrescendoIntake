@@ -7,15 +7,17 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Intake;
 
+
+//Command subsystem to set speed of the roller of the intake
 public class IntakeCommand extends Command {
   /** Creates a new IntakeCommand. */
   private Intake m_intake;
-  private double spinin;
+  private double spinIn;
 
-  public IntakeCommand(Intake m_intake, double spinin) {
+  public IntakeCommand(Intake m_intake, double spinIn) {
     // Use addRequirements() here to declare subsystem dependencies.
     this.m_intake = m_intake;
-    this.spinin = spinin;
+    this.spinIn = spinIn;
   }
 
   // Called when the command is initially scheduled.
@@ -25,13 +27,13 @@ public class IntakeCommand extends Command {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    m_intake.SpinSpeed(spinin);
+    m_intake.SpinSpeed(spinIn);
   }
 
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    m_intake.SpinSpeed(spinin = 0);
+    m_intake.SpinSpeed(spinIn = 0);
   }
 
   // Returns true when the command should end.
