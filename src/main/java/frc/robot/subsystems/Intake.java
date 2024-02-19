@@ -44,6 +44,7 @@ public class Intake extends SubsystemBase {
   private void configMotors(CANSparkMax IntakeMotor) {
     IntakeMotor.setIdleMode(IdleMode.kBrake);
     IntakeMotor.setSmartCurrentLimit(25);
+    IntakeMotor.setInverted(false);
 
   }
 

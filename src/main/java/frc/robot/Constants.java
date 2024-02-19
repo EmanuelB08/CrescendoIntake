@@ -19,8 +19,12 @@ public final class Constants {
 
   //Intake Constants
   public static final double INTAKE_MOTOR_SPEED = 0.45;
-  public static final double OTB_MOTOR_SPEED = 0.25;
-  public static final int INTAKE_MOTOR_PORT = 0;
+  // public static final int INTAKE_MOTOR_PORT = 0;
+
+  //Yoshi Constants
+  public static final double OTB_MOTOR_ONE_SPEED = 0; //
+  public static final double OTB_MOTOR_TWO_SPEED = 0; //
+
 
 
 }

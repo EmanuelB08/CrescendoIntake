@@ -14,10 +14,11 @@ public class IntakeCommand extends Command {
   private Intake m_intake;
   private double spinIn;
 
-  public IntakeCommand(Intake m_intake, double spinIn) {
+  public IntakeCommand(Intake intake, double spinIn) {
     // Use addRequirements() here to declare subsystem dependencies.
-    this.m_intake = m_intake;
     this.spinIn = spinIn;
+    m_intake = intake;
+
   }
 
   // Called when the command is initially scheduled.
