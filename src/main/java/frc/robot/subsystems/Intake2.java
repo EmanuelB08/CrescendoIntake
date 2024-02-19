@@ -29,7 +29,7 @@ public class Intake2 extends SubsystemBase {
 
     configMotors(OTBMotor1, OTBMotor2);
   }
-
+ 
 
   private void configMotors(CANSparkMax OTBMotor1, CANSparkMax OTBMotor2) {
     CANSparkMax[] motors = {OTBMotor1, OTBMotor2};
